@@ -2,7 +2,6 @@ let timerDisplay = document.getElementById('timer');
 let startBtn = document.getElementById('start');
 let pauseBtn = document.getElementById('pause');
 let resetBtn = document.getElementById('reset');
-let volumeControl = document.getElementById('volume');
 
 let timerInterval;
 let running = false;
@@ -44,13 +43,6 @@ function resetTimer() {
   timerDisplay.innerHTML = '00 hr 00 m 00 s';
 }
 
-// Volume control functionality
-volumeControl.addEventListener('input', function() {
-  const audio = document.getElementById('background-audio');
-  audio.volume = volumeControl.value; // Set the volume based on the slider value
-});
-
-// Event Listeners
 startBtn.addEventListener('click', startTimer);
 pauseBtn.addEventListener('click', pauseTimer);
 resetBtn.addEventListener('click', resetTimer);
