@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif; /* Classic serif font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1b1b1b; /* Darker background for a spooky feel */
+    background-image: url('https://www.transparenttextures.com/patterns/black-linen.png'); /* Linen texture for depth */
+    color: #f9f9f9; /* Light gray text for contrast */
+}
+
+.container {
+    text-align: center;
+    border: 8px solid #6a4e4d; /* Dark border */
+    padding: 40px; /* Increased padding */
+    border-radius: 12px;
+    background-color: #292929; /* Dark gray for container */
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.8); /* Strong shadow */
+    width: 600px; /* Fixed width for uniformity */
+}
+
+#timer {
+    font-size: 40px; /* Font size */
+    margin-bottom: 30px; /* Margin below the timer */
+    border: 3px solid #d1a145; /* Gold border for a spooky effect */
+    border-radius: 12px;
+    background-color: #3d3d3d; /* Darker background for timer */
+    padding: 20px; /* Padding for spacing */
+    width: 100%; /* Full width for the timer */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space out timer parts */
+    font-family: 'Crimson Text', serif; /* Gothic style font for timer */
+}
+
+#timer span {
+    text-align: center; /* Center each part */
+    width: 120px; /* Fixed width for each part */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Increased gap for better spacing */
+}
+
+button {
+    font-size: 18px;
+    padding: 12px 25px;
+    border: 2px solid #d1a145; /* Gold border */
+    background-color: #6a4e4d; /* Deep burgundy for buttons */
+    color: #f9f9f9; /* Light text color for contrast */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Great Vibes', cursive; /* Decorative font for buttons */
+    text-transform: uppercase; /* Make text uppercase for elegance */
+    min-width: 120px; /* Ensure buttons have a minimum width */
+    text-align: center; /* Center text in buttons */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Dark shadow effect */
+}
+
+button:hover {
+    background-color: #d1a145; /* Gold hover effect */
+    color: #3b3a30; /* Dark text on hover */
+}
+
+button:focus {
+    outline: none;
+}
+
+.volume-control {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume-control label {
+    font-size: 25px;
+    margin-right: 10px;
+    font-family: 'Great Vibes', cursive;
+    color: #d4af37; /* Gold color for label */
+}
