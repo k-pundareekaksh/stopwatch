@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <audio id="background-audio" loop>
-        <source src="https://k-pundareekaksh.github.io/stopwatch/interstellar-music.mp3?raw=true" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
     <div class="container">
         <div id="timer">
             <span id="hours">00 hr</span>
@@ -21,28 +17,8 @@
             <button id="start">Start</button>
             <button id="pause">Pause</button>
             <button id="reset">Reset</button>
-        </div>
-        <div class="volume-control">
-            <label for="volume">Volume:</label>
-            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
-        </div>
-        <button id="play-audio">Play Audio</button>
+        </div
     </div>
     <script src="script.js"></script>
-
-    <script>
-        document.getElementById('play-audio').addEventListener('click', function() {
-            const audio = document.getElementById('background-audio');
-            audio.play().catch(error => {
-                console.error('Error playing audio:', error);
-            });
-        });
-
-        const volumeControl = document.getElementById('volume');
-        volumeControl.addEventListener('input', function() {
-            const audio = document.getElementById('background-audio');
-            audio.volume = this.value;
-        });
-    </script>
 </body>
 </html>
