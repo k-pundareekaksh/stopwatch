@@ -74,16 +74,3 @@ button:focus {
     outline: none;
 }
 
-.volume-control {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.volume-control label {
-    font-size: 25px;
-    margin-right: 10px;
-    font-family: 'Great Vibes', cursive;
-    color: #d4af37;
-}
