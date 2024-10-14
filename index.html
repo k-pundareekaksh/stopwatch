@@ -29,5 +29,20 @@
         <button id="play-audio">Play Audio</button>
     </div>
     <script src="script.js"></script>
+
+    <script>
+        document.getElementById('play-audio').addEventListener('click', function() {
+            const audio = document.getElementById('background-audio');
+            audio.play().catch(error => {
+                console.error('Error playing audio:', error);
+            });
+        });
+
+        const volumeControl = document.getElementById('volume');
+        volumeControl.addEventListener('input', function() {
+            const audio = document.getElementById('background-audio');
+            audio.volume = this.value;
+        });
+    </script>
 </body>
 </html>
